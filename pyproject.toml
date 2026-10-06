@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-cage"
+version = "0.1.0"
+description = "The reason you can sleep while your agent runs at 3am. A standalone, framework-agnostic safety library for AI agents: fail-closed allowlists, human approval gates, spend budgets, a hash-chained audit log, and a kill switch. Stdlib only — zero dependencies."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "prayingperceptions" }]
+keywords = ["ai", "agents", "safety", "allowlist", "approval", "audit", "kill-switch"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Security",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/prayingperceptions/agent-cage"
+Repository = "https://github.com/prayingperceptions/agent-cage"
+
+[tool.setuptools.packages.find]
+include = ["cage*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
