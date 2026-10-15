@@ -6,7 +6,7 @@
         "role": "maintainer",
         "name": "Christopher Perceptions",
         "email": "christopherperceptions@gmail.com",
-        "phone": "+1 414-364-4959",
+        "phone": "414-364-4959",
         "description": "Christopher Perceptions is an engineer based in Milan, Michigan, USA, and the author and sole maintainer of agent-cage. He works on safety tooling for AI agents in his own time. This application asks for retroactive recognition of shipped open source work, plus a modest nights and weekends maintenance runway covering dependency hygiene, security fixes, community support, and documentation. The project is early-stage with growing adoption; no users, traction, revenue, or team members beyond the maintainer are claimed.",
         "webpageUrl": {
             "url": "https://github.com/prayingperceptions"
