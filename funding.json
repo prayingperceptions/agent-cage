@@ -1,0 +1,52 @@
+{
+    "$schema": "https://fundingjson.org/schema/v1.1.0.json",
+    "version": "v1.1.0",
+    "entity": {
+        "type": "individual",
+        "role": "maintainer",
+        "name": "Christopher Perceptions",
+        "email": "christopherperceptions@gmail.com",
+        "phone": "+1 414-364-4959",
+        "description": "Christopher Perceptions is an engineer based in Milan, Michigan, USA, and the author and sole maintainer of agent-cage. He works on safety tooling for AI agents in his own time. This application asks for retroactive recognition of shipped open source work, plus a modest nights and weekends maintenance runway covering dependency hygiene, security fixes, community support, and documentation. The project is early-stage with growing adoption; no users, traction, revenue, or team members beyond the maintainer are claimed.",
+        "webpageUrl": {
+            "url": "https://github.com/prayingperceptions"
+        }
+    },
+    "projects": [
+        {
+            "guid": "agent-cage",
+            "name": "agent-cage",
+            "description": "agent-cage is a standalone, fail-closed safety library for AI agents, written in Python and released under the MIT license with no dependencies outside the standard library. A single guard() call returns allow, ask, or deny on every proposed action. Policies are frozen at load time so running code cannot silently widen permissions. Irreversible steps require human ticket approvals, an irreversible kill switch halts the agent when tripped, budget caps are enforced in a thread-safe manner, and every decision is recorded in a hash-chained, HMAC-signed audit log. The library ships with 133 clean-room tests, all passing, and a self-commissioned adversarial audit found 15 issues (4 rated critical); all were remediated and re-verified. The project is early-stage with growing adoption; this application seeks retroactive recognition of shipped work and a maintenance runway, not funding contingent on future features.",
+            "webpageUrl": {
+                "url": "https://github.com/prayingperceptions/agent-cage"
+            },
+            "repositoryUrl": {
+                "url": "https://github.com/prayingperceptions/agent-cage"
+            },
+            "licenses": ["spdx:MIT"],
+            "tags": ["ai-safety", "ai-agents", "security", "python", "audit-logging"]
+        }
+    ],
+    "funding": {
+        "channels": [
+            {
+                "guid": "floss-fund-disbursement",
+                "type": "other",
+                "address": "",
+                "description": "FLOSS/fund disburses grants directly after its paperwork process. The applicant will provide bank account and tax documents on request, as described in the fund FAQs."
+            }
+        ],
+        "plans": [
+            {
+                "guid": "floss-fund-2026",
+                "status": "active",
+                "name": "FLOSS/fund grant 2026",
+                "description": "Retroactive recognition of the shipped agent-cage open source library plus a nights and weekends maintenance runway: dependency hygiene, security fixes, community support, and documentation. Not contingent on new features.",
+                "amount": 25000,
+                "currency": "USD",
+                "frequency": "one-time",
+                "channels": ["floss-fund-disbursement"]
+            }
+        ]
+    }
+}
